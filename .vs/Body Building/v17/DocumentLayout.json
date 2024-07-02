@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\annav\\OneDrive\\Desktop\\Repos\\BodyBuilding\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6BB2A37D-3A44-400D-8172-7ECAB382788B}|Body Building\\Body Building.csproj|c:\\users\\annav\\onedrive\\desktop\\repos\\bodybuilding\\body building\\exercises\\legswing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BB2A37D-3A44-400D-8172-7ECAB382788B}|Body Building\\Body Building.csproj|solutionrelative:body building\\exercises\\legswing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BB2A37D-3A44-400D-8172-7ECAB382788B}|Body Building\\Body Building.csproj|c:\\users\\annav\\onedrive\\desktop\\repos\\bodybuilding\\body building\\exercises\\iexercises.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BB2A37D-3A44-400D-8172-7ECAB382788B}|Body Building\\Body Building.csproj|solutionrelative:body building\\exercises\\iexercises.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LegSwing.cs",
+              "DocumentMoniker": "C:\\Users\\annav\\OneDrive\\Desktop\\Repos\\BodyBuilding\\Body Building\\Exercises\\LegSwing.cs",
+              "RelativeDocumentMoniker": "Body Building\\Exercises\\LegSwing.cs",
+              "ToolTip": "C:\\Users\\annav\\OneDrive\\Desktop\\Repos\\BodyBuilding\\Body Building\\Exercises\\LegSwing.cs",
+              "RelativeToolTip": "Body Building\\Exercises\\LegSwing.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAIwBoAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T03:22:02.268Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IExercises.cs",
+              "DocumentMoniker": "C:\\Users\\annav\\OneDrive\\Desktop\\Repos\\BodyBuilding\\Body Building\\Exercises\\IExercises.cs",
+              "RelativeDocumentMoniker": "Body Building\\Exercises\\IExercises.cs",
+              "ToolTip": "C:\\Users\\annav\\OneDrive\\Desktop\\Repos\\BodyBuilding\\Body Building\\Exercises\\IExercises.cs",
+              "RelativeToolTip": "Body Building\\Exercises\\IExercises.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T03:21:47.398Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
