@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Body Building")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+620d469f05f8396b3e9d5b322f9a0da80e1744e1")]
 [assembly: System.Reflection.AssemblyProductAttribute("Body Building")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Body Building")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

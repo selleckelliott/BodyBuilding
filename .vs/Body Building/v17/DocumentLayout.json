@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\annav\\OneDrive\\Desktop\\Repos\\BodyBuilding\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6BB2A37D-3A44-400D-8172-7ECAB382788B}|Body Building\\Body Building.csproj|c:\\users\\annav\\onedrive\\desktop\\repos\\bodybuilding\\body building\\exercises\\legswing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6BB2A37D-3A44-400D-8172-7ECAB382788B}|Body Building\\Body Building.csproj|solutionrelative:body building\\exercises\\legswing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6BB2A37D-3A44-400D-8172-7ECAB382788B}|Body Building\\Body Building.csproj|c:\\users\\annav\\onedrive\\desktop\\repos\\bodybuilding\\body building\\exercises\\backsquat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BB2A37D-3A44-400D-8172-7ECAB382788B}|Body Building\\Body Building.csproj|solutionrelative:body building\\exercises\\backsquat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6BB2A37D-3A44-400D-8172-7ECAB382788B}|Body Building\\Body Building.csproj|c:\\users\\annav\\onedrive\\desktop\\repos\\bodybuilding\\body building\\exercises\\iexercises.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6BB2A37D-3A44-400D-8172-7ECAB382788B}|Body Building\\Body Building.csproj|solutionrelative:body building\\exercises\\iexercises.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BB2A37D-3A44-400D-8172-7ECAB382788B}|Body Building\\Body Building.csproj|c:\\users\\annav\\onedrive\\desktop\\repos\\bodybuilding\\body building\\exercises\\deadlift.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BB2A37D-3A44-400D-8172-7ECAB382788B}|Body Building\\Body Building.csproj|solutionrelative:body building\\exercises\\deadlift.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BB2A37D-3A44-400D-8172-7ECAB382788B}|Body Building\\Body Building.csproj|c:\\users\\annav\\onedrive\\desktop\\repos\\bodybuilding\\body building\\exercises\\legswing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BB2A37D-3A44-400D-8172-7ECAB382788B}|Body Building\\Body Building.csproj|solutionrelative:body building\\exercises\\legswing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BB2A37D-3A44-400D-8172-7ECAB382788B}|Body Building\\Body Building.csproj|c:\\users\\annav\\onedrive\\desktop\\repos\\bodybuilding\\body building\\exercises\\airsquat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BB2A37D-3A44-400D-8172-7ECAB382788B}|Body Building\\Body Building.csproj|solutionrelative:body building\\exercises\\airsquat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,20 +30,61 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Deadlift.cs",
+              "DocumentMoniker": "C:\\Users\\annav\\OneDrive\\Desktop\\Repos\\BodyBuilding\\Body Building\\Exercises\\Deadlift.cs",
+              "RelativeDocumentMoniker": "Body Building\\Exercises\\Deadlift.cs",
+              "ToolTip": "C:\\Users\\annav\\OneDrive\\Desktop\\Repos\\BodyBuilding\\Body Building\\Exercises\\Deadlift.cs",
+              "RelativeToolTip": "Body Building\\Exercises\\Deadlift.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T00:16:52.536Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "BackSquat.cs",
+              "DocumentMoniker": "C:\\Users\\annav\\OneDrive\\Desktop\\Repos\\BodyBuilding\\Body Building\\Exercises\\BackSquat.cs",
+              "RelativeDocumentMoniker": "Body Building\\Exercises\\BackSquat.cs",
+              "ToolTip": "C:\\Users\\annav\\OneDrive\\Desktop\\Repos\\BodyBuilding\\Body Building\\Exercises\\BackSquat.cs",
+              "RelativeToolTip": "Body Building\\Exercises\\BackSquat.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEUAAACLAgAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T23:42:50.828Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AirSquat.cs",
+              "DocumentMoniker": "C:\\Users\\annav\\OneDrive\\Desktop\\Repos\\BodyBuilding\\Body Building\\Exercises\\AirSquat.cs",
+              "RelativeDocumentMoniker": "Body Building\\Exercises\\AirSquat.cs",
+              "ToolTip": "C:\\Users\\annav\\OneDrive\\Desktop\\Repos\\BodyBuilding\\Body Building\\Exercises\\AirSquat.cs",
+              "RelativeToolTip": "Body Building\\Exercises\\AirSquat.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAADIAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T23:09:24.227Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "LegSwing.cs",
               "DocumentMoniker": "C:\\Users\\annav\\OneDrive\\Desktop\\Repos\\BodyBuilding\\Body Building\\Exercises\\LegSwing.cs",
               "RelativeDocumentMoniker": "Body Building\\Exercises\\LegSwing.cs",
               "ToolTip": "C:\\Users\\annav\\OneDrive\\Desktop\\Repos\\BodyBuilding\\Body Building\\Exercises\\LegSwing.cs",
               "RelativeToolTip": "Body Building\\Exercises\\LegSwing.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAIwBoAAAAgAAAA",
+              "ViewState": "AQIAACQAAAAAAAAAAAAIwC8AAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-02T03:22:02.268Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-02T03:22:02.268Z"
             },
             {
               "$type": "Document",
@@ -45,10 +98,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-02T03:21:47.398Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         }
