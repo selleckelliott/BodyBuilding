@@ -1,0 +1,36 @@
+﻿@model IEnumerable<Exercise>
+
+<h2>Exercises</h2> 
+<table class="table">
+    <tr>
+        <th>ExerciseID</th>
+        <th>Name</th>
+        <th>BodySection</th>
+        <th>Set1Reps</th>
+        <th>Set2Reps</th>
+        <th>Set3Reps</th>
+        <th>Set4Reps</th>
+        <th>Set5Reps</th>
+        <th>WeightLifted</th>
+        <th>Date</th>
+        <th>Notes</th>
+    </tr>
+
+    @foreach (var exercise in @Model)
+    {
+        <tr>
+            <td>@exercise.ExerciseID</td>
+            <td>@exercise.Name</td>
+            <td>@exercise.BodySection</td>
+            <td>@exercise.Set1Reps</td>
+            <td>@exercise.Set2Reps</td>
+            <td>@exercise.Set3Reps</td>
+            <td>@exercise.Set4Reps</td>
+            <td>@exercise.Set5Reps</td>
+            <td>@exercise.WeightLifted</td>
+            <td>@exercise.Date</td>
+            <td>@exercise.Notes</td>
+        </tr>
+    }
+
+</table>

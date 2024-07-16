@@ -1,3 +1,7 @@
+using BodybuildingTest.Models;
+using MySql.Data.MySqlClient;
+using System.Data;
+
 namespace BodybuildingTest
 {
     public class Program
@@ -8,6 +12,16 @@ namespace BodybuildingTest
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+
+            //connect to table
+            builder.Services.AddScoped<IDbConnection>((s) =>
+            {
+                IDbConnection conn = new MySqlConnection(builder.Configuration.GetConnectionString("bodybuildingapp"));
+                conn.Open();
+                return conn;
+            });
+
+            builder.Services.AddTransient<IExerciseRepository, ExerciseRepository>();
 
             var app = builder.Build();
 
