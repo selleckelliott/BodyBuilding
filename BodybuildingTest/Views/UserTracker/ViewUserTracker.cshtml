@@ -1,0 +1,34 @@
+﻿@model UserTracker
+
+<h3>@Model.ExerciseName Information</h3>
+
+<table class="table">
+    <tr>
+        <th>Tracker ID</th>
+        <th>UserID</th>
+        <th>Exercise ID</th>
+        <th>Exercise Name</th>
+        <th>Set 1 - Reps</th>
+        <th>Set 2 - Reps</th>
+        <th>Set 3 - Reps</th>
+        <th>Set 4 - Reps</th>
+        <th>Set 5 - Reps</th>
+        <th>Weight</th>
+        <th>Date</th>
+        <th>Notes</th>
+    </tr>
+    <tr>
+        <td>@Model.TrackerID</td>
+        <td>@Model.UserID</td>
+        <td>@Model.ExerciseID</td>
+        <td>@Model.ExerciseName</td>
+        <td>@Model.Set1Reps</td>
+        <td>@Model.Set2Reps</td>
+        <td>@Model.Set3Reps</td>
+        <td>@Model.Set4Reps</td>
+        <td>@Model.Set5Reps</td>
+        <td>@Model.WeightLifted</td>
+        <td>@Model.Date</td>
+        <td>@Model.Notes</td>
+    </tr>
+</table>

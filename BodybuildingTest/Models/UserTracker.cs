@@ -8,15 +8,16 @@ using System.Data;
 
 namespace BodybuildingTest.Models
 {
-    public class Exercise //Properties corresponding to the exercise table in MySQL
+    public class UserTracker //Properties corresponding to the exercise table in MySQL
     {
-        public Exercise()
+        public UserTracker()
         {
         }
 
+        public int TrackerID { get; set; }
+        public int UserID { get; set; }
         public int ExerciseID { get; set; }
-        public string Name { get; set; }
-        public string BodySection { get; set; }
+        public string ExerciseName { get; set; }
         public int Set1Reps { get; set; }
         public int Set2Reps { get; set; }
         public int Set3Reps { get; set; }

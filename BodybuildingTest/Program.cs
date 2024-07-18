@@ -21,7 +21,7 @@ namespace BodybuildingTest
                 return conn;
             });
 
-            builder.Services.AddTransient<IExerciseRepository, ExerciseRepository>();
+            builder.Services.AddTransient<IUserTrackerRepository, UserTrackerRepository>();
 
             var app = builder.Build();
 

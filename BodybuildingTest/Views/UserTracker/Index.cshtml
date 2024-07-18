@@ -1,0 +1,38 @@
+﻿@model IEnumerable<UserTracker>
+
+<h2>Users Lifting Data</h2> 
+<table class="table">
+    <tr>
+        <th>TrackerID</th>
+        <th>UserID</th>
+        <th>ExerciseID</th>
+        <th>ExerciseName</th>
+        <th>Set1Reps</th>
+        <th>Set2Reps</th>
+        <th>Set3Reps</th>
+        <th>Set4Reps</th>
+        <th>Set5Reps</th>
+        <th>WeightLifted</th>
+        <th>Date</th>
+        <th>Notes</th>
+    </tr>
+
+    @foreach (var userTracking in @Model)
+    {
+        <tr>
+            <td><a href=/UserTracker/ViewUserTracker/@userTracking.TrackerID>@userTracking.TrackerID</a></td>
+            <td>@userTracking.UserID</td>
+            <td>@userTracking.ExerciseID</td>
+            <td>@userTracking.ExerciseName</td>
+            <td>@userTracking.Set1Reps</td>
+            <td>@userTracking.Set2Reps</td>
+            <td>@userTracking.Set3Reps</td>
+            <td>@userTracking.Set4Reps</td>
+            <td>@userTracking.Set5Reps</td>
+            <td>@userTracking.WeightLifted</td>
+            <td>@userTracking.Date</td>
+            <td>@userTracking.Notes</td>
+        </tr>
+    }
+
+</table>
