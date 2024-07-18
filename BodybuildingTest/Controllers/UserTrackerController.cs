@@ -1,4 +1,4 @@
-﻿using BodybuildingTest.Models;
+﻿using BodybuildingTest.Models.UserTracking;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;

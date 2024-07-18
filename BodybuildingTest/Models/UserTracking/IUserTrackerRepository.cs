@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace BodybuildingTest.Models
+namespace BodybuildingTest.Models.UserTracking
 {
     public interface IUserTrackerRepository
     {

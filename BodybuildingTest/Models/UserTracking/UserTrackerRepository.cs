@@ -1,7 +1,7 @@
 ﻿using Dapper;
 using System.Data;
 
-namespace BodybuildingTest.Models
+namespace BodybuildingTest.Models.UserTracking
 {
     public class UserTrackerRepository : IUserTrackerRepository
     {
@@ -17,7 +17,7 @@ namespace BodybuildingTest.Models
         }
         public UserTracker GetTrackers(int id)
         {
-            return _conn.QuerySingle<UserTracker>("SELECT * FROM USERTRACKER WHERE TRACKERID = @id", new { id = id });
+            return _conn.QuerySingle<UserTracker>("SELECT * FROM USERTRACKER WHERE TRACKERID = @id", new { id });
         }
     }
 }

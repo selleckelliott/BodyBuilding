@@ -1,4 +1,6 @@
-using BodybuildingTest.Models;
+using BodybuildingTest.Models.Exercise;
+using BodybuildingTest.Models.UserInformation;
+using BodybuildingTest.Models.UserTracking;
 using MySql.Data.MySqlClient;
 using System.Data;
 
@@ -20,8 +22,12 @@ namespace BodybuildingTest
                 conn.Open();
                 return conn;
             });
-
+            //Usertracker table
             builder.Services.AddTransient<IUserTrackerRepository, UserTrackerRepository>();
+            //Exercise table
+            builder.Services.AddTransient<IExerciseRepository, ExerciseRepository>();
+            //UserInfo table
+            builder.Services.AddTransient<IUserInfoRepository, UserInfoRepository>();
 
             var app = builder.Build();
 

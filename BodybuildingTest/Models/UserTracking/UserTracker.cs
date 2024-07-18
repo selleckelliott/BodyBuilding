@@ -6,7 +6,7 @@ using MySql.Data.MySqlClient;
 using System.Collections.Generic;
 using System.Data;
 
-namespace BodybuildingTest.Models
+namespace BodybuildingTest.Models.UserTracking
 {
     public class UserTracker //Properties corresponding to the exercise table in MySQL
     {
@@ -24,7 +24,7 @@ namespace BodybuildingTest.Models
         public int Set4Reps { get; set; }
         public int Set5Reps { get; set; }
         public float WeightLifted { get; set; }
-        public DateTime Date {  get; set; }
+        public DateTime Date { get; set; }
         public string Notes { get; set; }
 
     }

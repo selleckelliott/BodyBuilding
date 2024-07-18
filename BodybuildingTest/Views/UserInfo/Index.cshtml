@@ -1,0 +1,29 @@
+﻿@model IEnumerable<BodybuildingTest.Models.UserInformation.UserInfo>
+
+    <h2>User Info</h2>
+    <table class="table">
+        <tr>
+            <th>UserID</th>
+            <th>username</th>
+            <th>email</th>
+            <th>password</th>
+            <th>create_time</th>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Most_Recent_Workout</th>
+        </tr>
+
+    @foreach (var userInfo in @Model)
+    {
+        <tr>
+            <td>@userInfo.UserID</td>
+            <td>@userInfo.Username</td>
+            <td>@userInfo.Email</td>
+            <td>@userInfo.Password</td>
+            <td>@userInfo.CreateTime</td>
+            <td>@userInfo.FirstName</td>
+            <td>@userInfo.LastName</td>
+            <td>@userInfo.MostRecentWorkout</td>
+        </tr>
+    }
+</table>

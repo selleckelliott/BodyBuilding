@@ -1,0 +1,19 @@
+﻿@model IEnumerable<BodybuildingTest.Models.Exercise.Exercise>
+
+<h2>Exercises</h2>
+<table class="table">
+    <tr>
+        <th>ExerciseID</th>
+        <th>ExerciseName</th>
+        <th>BodySection</th>
+    </tr>
+
+    @foreach (var exercise in @Model)
+    {
+        <tr>
+            <td>@exercise.ExerciseID</td>
+            <td>@exercise.ExerciseName</td>
+            <td>@exercise.BodySection</td>
+        </tr>
+    }
+</table>
