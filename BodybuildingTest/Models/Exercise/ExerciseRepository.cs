@@ -14,5 +14,14 @@ namespace BodybuildingTest.Models.Exercise
         {
             return _conn.Query<Exercise>("SELECT * FROM EXERCISE");
         }
+        public Exercise GetExercise(int id)
+        {
+            return _conn.QuerySingle<Exercise>("SELECT * FROM EXERCISE WHERE EXERCISEID = @id", new { id = id });
+        }
+        public void UpdateExercise(Exercise exercise)
+        {
+            _conn.Execute("UPDATE exercise SET ExerciseName = @ExerciseName, BodySection = @BodySection WHERE ExerciseID = @id",
+             new { exercisename = exercise.ExerciseName, bodysection = exercise.BodySection, id = exercise.ExerciseID });
+        }
     }
 }

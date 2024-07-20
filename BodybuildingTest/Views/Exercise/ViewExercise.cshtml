@@ -1,0 +1,20 @@
+﻿@model BodybuildingTest.Models.Exercise.Exercise
+
+
+<h3>@Model.ExerciseName Information</h3>
+
+<table class="table">
+    <tr>
+        <th>Exercise ID</th>
+        <th>Exercise Name</th>
+        <th>Body Section</th>
+    </tr>
+    <tr>
+        <td>@Model.ExerciseID</td>
+        <td>@Model.ExerciseName</td>
+        <td>@Model.BodySection</td>
+    </tr>
+</table>
+<div style="display: block">
+    <a href="/Exercise/UpdateExercise/@Model.ExerciseID">Update this Exercise</a>
+</div>

@@ -4,26 +4,26 @@
     <table class="table">
         <tr>
             <th>UserID</th>
-            <th>username</th>
-            <th>email</th>
-            <th>password</th>
-            <th>create_time</th>
-            <th>FirstName</th>
-            <th>LastName</th>
-            <th>Most_Recent_Workout</th>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Password</th>
+            <th>Create Time</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Most Recent Workout</th>
         </tr>
 
     @foreach (var userInfo in @Model)
     {
         <tr>
-            <td>@userInfo.UserID</td>
+            <td><a href=/UserInfo/ViewUserInfo/@userInfo.UserID>@userInfo.UserID</a></td>
             <td>@userInfo.Username</td>
             <td>@userInfo.Email</td>
             <td>@userInfo.Password</td>
-            <td>@userInfo.CreateTime</td>
+            <td>@userInfo.Create_Time</td>
             <td>@userInfo.FirstName</td>
             <td>@userInfo.LastName</td>
-            <td>@userInfo.MostRecentWorkout</td>
+            <td>@userInfo.Most_Recent_Workout</td>
         </tr>
     }
 </table>

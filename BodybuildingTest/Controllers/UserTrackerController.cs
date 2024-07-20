@@ -1,4 +1,5 @@
-﻿using BodybuildingTest.Models.UserTracking;
+﻿using BodybuildingTest.Models.UserInformation;
+using BodybuildingTest.Models.UserTracking;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -25,6 +26,15 @@ namespace BodybuildingTest.Controllers
         public IActionResult ViewUserTracker(int id)
         {
             var userTracker  = repo.GetTrackers(id);
+            return View(userTracker);
+        }
+        public IActionResult UpdateUserTracker(int id)
+        {
+            UserTracker userTracker = repo.GetTrackers(id);
+            if (userTracker == null)
+            {
+                return View("UserTrackingNotFound");
+            }
             return View(userTracker);
         }
     }

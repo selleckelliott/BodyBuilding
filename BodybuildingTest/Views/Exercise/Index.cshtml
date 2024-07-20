@@ -11,7 +11,7 @@
     @foreach (var exercise in @Model)
     {
         <tr>
-            <td>@exercise.ExerciseID</td>
+            <td><a href=/Exercise/ViewExercise/@exercise.ExerciseID>@exercise.ExerciseID</a></td>
             <td>@exercise.ExerciseName</td>
             <td>@exercise.BodySection</td>
         </tr>

@@ -1,0 +1,21 @@
+﻿@model BodybuildingTest.Models.Exercise.Exercise
+
+<h2>Update @Model.ExerciseName</h2>
+
+@using (Html.BeginForm("UpdateExerciseToDatabase", "Exercise", "Post"))
+{
+    <input asp-for="ExerciseID" type="hidden" value="@Model.ExerciseID" />
+
+    <label asp-for="ExerciseName" class="control-label">ExerciseName</label>
+    <input type="text" name="ExerciseName" class="form-control" value="@Model.ExerciseName" />
+
+    <label asp-for="BodySection" class="control-label">BodySection</label>
+    <select name="BodySection" class="form-control">
+        <option value="Upper Body">Upper Body</option>
+        <option value="Lower Body">Lower Body</option>
+        <option value="Core">Core</option>
+        value="@Model.ExerciseName"
+    </select>
+
+    <input type="submit" value="Update Exercise" class="btn btn-primary" />
+}
