@@ -30,5 +30,12 @@ namespace BodybuildingTest.Controllers
             }
             return View(userInfo);
         }
+        //This method can update the user's username, email, password, and first and last names.
+        public IActionResult UpdateUserInfoToDatabase(UserInfo userInfo)
+        {
+            repo.UpdateUserInfo(userInfo);
+
+            return RedirectToAction("ViewUserInfo", new { id = userInfo.UserID });
+        }
     }
 }

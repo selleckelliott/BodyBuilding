@@ -1,5 +1,26 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@model BodybuildingTest.Models.UserInformation.UserInfo
+
+<h2>Update @Model.Username</h2>
+
+@using (Html.BeginForm("UpdateUserInfoToDatabase", "UserInfo", "Post"))
+{
+    <input asp-for="UserID" type="hidden" value="@Model.UserID" />
+    <input asp-for="Create_Time" type="hidden" value="@Model.Create_Time" />
+
+    <label asp-for="Username" class="control-label">Username</label>
+    <input type="text" name="Username" class="form-control" value="@Model.Username" />
+    <label asp-for="Password" class="control-label">Password</label>
+    <input type="text" name="Password" class="form-control" value="@Model.Password" />
+    <label asp-for="FirstName" class="control-label">FirstName</label>
+    <input type="text" name="FirstName" class="form-control" value="@Model.FirstName" />
+    <label asp-for="LastName" class="control-label">LastName</label>
+    <input type="text" name="LastName" class="form-control" value="@Model.LastName" />
+    <label asp-for="Email" class="control-label">Email</label>
+    <input type="text" name="Email" class="form-control" value="@Model.Email" />
+
+    <label asp-for="Most_Recent_Workout" class="control-label">Most Recent Workout</label>
+    <div class="form-control">@Model.Most_Recent_Workout</div>
+
+
+    <input type="submit" value="Update User" class="btn btn-primary" />
 }
