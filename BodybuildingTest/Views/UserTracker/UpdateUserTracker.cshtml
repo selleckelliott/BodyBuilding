@@ -1,5 +1,34 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@model BodybuildingTest.Models.UserTracking.UserTracker
+
+<h2>Update @Model.ExerciseName</h2>
+
+@using (Html.BeginForm("UpdateUserTrackerToDatabase", "UserTracker", "Post"))
+{
+    <input asp-for="UserID" type="hidden" value="@Model.UserID" />
+    <input asp-for="TrackerID" type="hidden" value="@Model.TrackerID" />
+    <input asp-for="ExerciseID" type="hidden" value="@Model.ExerciseID" />
+    //TODO: make this only able to accept an exercise listed in the exercise table (auto suggesting)
+    //with JavaScript
+    <label asp-for="ExerciseName" class="control-label">ExerciseName</label>
+    <input type="text" name="ExerciseName" class="form-control" value="@Model.ExerciseName" />
+    //TODO: Change this to whole number typable
+    <label asp-for="Set1Reps" class="control-label">Set1Reps</label>
+    <input type="number" name="Set1Reps" class="form-control" value="@Model.Set1Reps" />
+    <label asp-for="Set2Reps" class="control-label">Set2Reps</label>
+    <input type="number" name="Set2Reps" class="form-control" value="@Model.Set2Reps" />
+    <label asp-for="Set3Reps" class="control-label">Set3Reps</label>
+    <input type="number" name="Set3Reps" class="form-control" value="@Model.Set3Reps" />
+    <label asp-for="Set4Reps" class="control-label">Set4Reps</label>
+    <input type="number" name="Set4Reps" class="form-control" value="@Model.Set4Reps" />
+    <label asp-for="Set5Reps" class="control-label">Set5Reps</label>
+    <input type="number" name="Set5Reps" class="form-control" value="@Model.Set5Reps" />
+
+    <label asp-for="WeightLifted" class="control-label">WeightLifted</label>
+    <input type="number" name="WeightLifted" class="form-control" value="@Model.WeightLifted" />
+    <label asp-for="Date" class="control-label">Date</label>
+    <input type="date" name="Date" class="form-control" value="@Model.Date" />
+    <label asp-for="Notes" class="control-label">Notes</label>
+    <input type="text" name="Notes" class="form-control" value="@Model.Notes" />
+
+    <input type="submit" value="Update Tracker" class="btn btn-primary" />
 }

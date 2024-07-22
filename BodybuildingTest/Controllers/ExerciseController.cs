@@ -22,7 +22,7 @@ namespace BodybuildingTest.Controllers
         }
         public IActionResult UpdateExercise(int id)
         {
-            Exercise exercise = repo.GetExercise(id);
+            Exercises exercise = repo.GetExercise(id);
             if (exercise == null)
             {
                 return View("ExerciseNotFound");
@@ -30,7 +30,7 @@ namespace BodybuildingTest.Controllers
             return View(exercise);
         }
         //This method can update the exercise name and they body section
-        public IActionResult UpdateExerciseToDatabase(Exercise exercise)
+        public IActionResult UpdateExerciseToDatabase(Exercises exercise)
         {
             repo.UpdateExercise(exercise);
 

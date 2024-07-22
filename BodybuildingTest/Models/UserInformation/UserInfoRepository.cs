@@ -21,7 +21,7 @@ namespace BodybuildingTest.Models.UserInformation
         public void UpdateUserInfo(UserInfo userInfo)
         {
             _conn.Execute("UPDATE userInfo SET username = @username, email = @email," +
-                "password = @password, creat_time = @create_time, FirstName = @FirstName," +
+                "password = @password, create_time = @create_time, FirstName = @FirstName," +
                 "LastName = @LastName, Most_Recent_Workout = @Most_Recent_Workout WHERE UserID = @id",
              new
              {

@@ -4,6 +4,7 @@
 
 @using (Html.BeginForm("UpdateUserInfoToDatabase", "UserInfo", "Post"))
 {
+    <div>
     <input asp-for="UserID" type="hidden" value="@Model.UserID" />
     <input asp-for="Create_Time" type="hidden" value="@Model.Create_Time" />
 
@@ -19,7 +20,8 @@
     <input type="text" name="Email" class="form-control" value="@Model.Email" />
 
     <label asp-for="Most_Recent_Workout" class="control-label">Most Recent Workout</label>
-    <div class="form-control">@Model.Most_Recent_Workout</div>
+    <input type="date" name="Most_Recent_Workout" class="form-control">@Model.Most_Recent_Workout />
+    </div>
 
 
     <input type="submit" value="Update User" class="btn btn-primary" />

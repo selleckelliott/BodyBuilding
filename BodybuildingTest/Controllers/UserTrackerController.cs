@@ -1,5 +1,6 @@
 ﻿using BodybuildingTest.Models.UserInformation;
 using BodybuildingTest.Models.UserTracking;
+using BodybuildingTest.Models.Exercise;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -12,10 +13,12 @@ namespace BodybuildingTest.Controllers
     public class UserTrackerController : Controller
     {
         private readonly IUserTrackerRepository repo;
+        private readonly IExerciseRepository _exercisRepo;
 
-        public UserTrackerController(IUserTrackerRepository repo)
+        public UserTrackerController(IUserTrackerRepository repo, IExerciseRepository exercisRepo)
         {
             this.repo = repo;
+            _exercisRepo = exercisRepo;
         }
         // GET: /<controller>/
         public IActionResult Index()
@@ -35,7 +38,20 @@ namespace BodybuildingTest.Controllers
             {
                 return View("UserTrackingNotFound");
             }
+            //Allows access to ExerciseName in exercise database
+            var exercises = _exercisRepo.GetAllExercises();
+            //var viewModel = new ExerciseAndUserTracker
+            //{
+                //UserTracker = userTracker,
+                //Exercises = exercises
+            //};
             return View(userTracker);
+        }
+        public IActionResult UpdateUserTrackerToDatabase(UserTracker userTracker)
+        {
+            repo.UpdateUserTracker(userTracker);
+
+            return RedirectToAction("ViewUserTracker", new { id = userTracker.UserID });
         }
     }
 }

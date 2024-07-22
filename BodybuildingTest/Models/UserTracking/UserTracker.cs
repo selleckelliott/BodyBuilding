@@ -5,10 +5,11 @@ using Microsoft.Extensions.Hosting;
 using MySql.Data.MySqlClient;
 using System.Collections.Generic;
 using System.Data;
+using BodybuildingTest.Models.Exercise;
 
 namespace BodybuildingTest.Models.UserTracking
 {
-    public class UserTracker //Properties corresponding to the exercise table in MySQL
+    public class UserTracker //Properties corresponding to the UserTracker table in MySQL
     {
         public UserTracker()
         {
@@ -27,5 +28,11 @@ namespace BodybuildingTest.Models.UserTracking
         public DateTime Date { get; set; }
         public string Notes { get; set; }
 
+        //Navigation property
+        public Exercises exercise { get; set; }
+
+        //This will allow UpdateUserTracker.cshtml to update the usertracker table and
+        //pull the ExerciseNames from the exercise table as they would be the only options to choose from
+        public IEnumerable<Exercises> Exercises { get; set; }
     }
 }

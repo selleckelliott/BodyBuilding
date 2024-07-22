@@ -5,8 +5,8 @@ namespace BodybuildingTest.Models.Exercise
 {
     public interface IExerciseRepository
     {
-        IEnumerable<Exercise> GetAllExercises();
-        Exercise GetExercise(int id);
-        void UpdateExercise(Exercise exercise);
+        IEnumerable<Exercises> GetAllExercises();
+        Exercises GetExercise(int id);
+        void UpdateExercise(Exercises exercise);
     }
 }
