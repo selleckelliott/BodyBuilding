@@ -35,7 +35,7 @@ namespace BodybuildingTest.Models.UserInformation
                  most_recent_workout = userInfo.Most_Recent_Workout
              });
         }
-        public void AddUser(NewUser newUser)
+        public void AddUser(UserInfo newUser)
         {
             _conn.Execute("INSERT INTO userinfo (FIRSTNAME, LASTNAME, USERNAME, EMAIL, PASSWORD) VALUES" +
                 "(@FirstName, @LastName, @Username, @Email, @Password);",
@@ -43,21 +43,22 @@ namespace BodybuildingTest.Models.UserInformation
                 {
                     FirstName = newUser.FirstName,
                     LastName = newUser.LastName,
-                    Username = newUser.UserName,
+                    Username = newUser.Username,
                     Email = newUser.Email,
                     Password = newUser.Password,
                 });
         }
-        public IEnumerable<NewUser> GetCurrentUsers()
+        public IEnumerable<UserInfo> GetCurrentUsers()
         {
-            return _conn.Query<NewUser>("SELECT * FROM userinfo;");
+            return _conn.Query<UserInfo>("SELECT * FROM userinfo;");
         }
-        public NewUser AssignNewUser()
-        {
-            var userList = GetCurrentUsers();
-            var product = new Product();
-            product.Categories = categoryList;
-            return product;
-        }
+        //public UserInfo AssignNewUser()
+        //{
+        //    var userList = GetCurrentUsers();
+        //    var product = new Product();
+        //    product.Categories = categoryList;
+        //    return product;
+        //}
+       
     }
 }

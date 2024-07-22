@@ -37,5 +37,19 @@ namespace BodybuildingTest.Controllers
 
             return RedirectToAction("ViewUserInfo", new { id = userInfo.UserID });
         }
+        //Creating a New User
+        public IActionResult NewUser(UserInfo newUser)
+        {
+            try
+            {
+                repo.AddUser(newUser);
+                return RedirectToAction("Index");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return RedirectToAction("Index");
+            }
+        }
     }
 }

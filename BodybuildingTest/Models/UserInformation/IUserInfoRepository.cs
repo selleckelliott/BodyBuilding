@@ -7,5 +7,6 @@ namespace BodybuildingTest.Models.UserInformation
         IEnumerable<UserInfo> GetAllUserInfo();
         UserInfo GetUserInfo(int id);
         void UpdateUserInfo(UserInfo userInfo);
+        public void AddUser(UserInfo newUser);
     }
 }
