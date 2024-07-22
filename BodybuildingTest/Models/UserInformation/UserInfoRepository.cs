@@ -35,5 +35,29 @@ namespace BodybuildingTest.Models.UserInformation
                  most_recent_workout = userInfo.Most_Recent_Workout
              });
         }
+        public void AddUser(NewUser newUser)
+        {
+            _conn.Execute("INSERT INTO userinfo (FIRSTNAME, LASTNAME, USERNAME, EMAIL, PASSWORD) VALUES" +
+                "(@FirstName, @LastName, @Username, @Email, @Password);",
+                new
+                {
+                    FirstName = newUser.FirstName,
+                    LastName = newUser.LastName,
+                    Username = newUser.UserName,
+                    Email = newUser.Email,
+                    Password = newUser.Password,
+                });
+        }
+        public IEnumerable<NewUser> GetCurrentUsers()
+        {
+            return _conn.Query<NewUser>("SELECT * FROM userinfo;");
+        }
+        public NewUser AssignNewUser()
+        {
+            var userList = GetCurrentUsers();
+            var product = new Product();
+            product.Categories = categoryList;
+            return product;
+        }
     }
 }

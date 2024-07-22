@@ -1,5 +1,4 @@
-﻿using System;
-namespace BodybuildingTest.Models.UserInformation
+﻿namespace BodybuildingTest.Models.UserInformation
 {
     public class UserInfo
     {
