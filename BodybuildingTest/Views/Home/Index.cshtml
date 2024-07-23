@@ -1,8 +1,25 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home Page</title>
+    <!--TODO: Add a link element with an href attribute to link external css file. Example:-->
+    @* <link rel="stylesheet" href="index.css"> *@
+</head>
 
+<body style="background-color:#5bcdb3">
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-3">Bodybuilding for Beginners</h1>
+    <h2 class="display-5">Complete the 12-Week Challenge</h2>
+    <button type="button">Get Started!</button>
+    <img src="~/images/BackSquatGuy.png" alt="Man doing backsquat" />
+    <h3 class="display6">Over 60+ Different Exercises</h3>
+    <img src="~/images/Collage.png" alt="Collage of various exercises" />
+    <a href="/Exercise" class="btn btn-primary" role="button">Exercises</a>
+    <h3 class="display-5">An Easy Introduction to Build Muscle and Burn Fat</h3>
+
+    <button type="button">Start Now</button>
 </div>
+</body>

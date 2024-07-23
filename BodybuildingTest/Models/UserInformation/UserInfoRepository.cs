@@ -1,5 +1,6 @@
 ﻿using Dapper;
 using System.Data;
+using BodybuildingTest.Models.Exercise;
 
 namespace BodybuildingTest.Models.UserInformation
 {
@@ -52,13 +53,18 @@ namespace BodybuildingTest.Models.UserInformation
         {
             return _conn.Query<UserInfo>("SELECT * FROM userinfo;");
         }
-        //public UserInfo AssignNewUser()
-        //{
-        //    var userList = GetCurrentUsers();
-        //    var product = new Product();
-        //    product.Categories = categoryList;
-        //    return product;
-        //}
-       
+        public IEnumerable<Exercises> GetExercises()
+        {
+            return _conn.Query<Exercises>("SELECT * FROM exercise;");
+        }
+
+        public UserInfo AssignNewUser()
+        {
+            var exerciseList = GetExercises();
+            var userInfo = new UserInfo();
+            userInfo.AllWorkouts = exerciseList;
+            return userInfo;
+        }
+
     }
 }

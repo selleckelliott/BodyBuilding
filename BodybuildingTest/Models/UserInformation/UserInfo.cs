@@ -1,4 +1,5 @@
-﻿namespace BodybuildingTest.Models.UserInformation
+﻿using BodybuildingTest.Models.Exercise;
+namespace BodybuildingTest.Models.UserInformation
 {
     public class UserInfo
     {
@@ -13,5 +14,6 @@
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public DateTime Most_Recent_Workout { get; set; }
+        public IEnumerable<Exercises> AllWorkouts { get; set; }  
     }
 }
