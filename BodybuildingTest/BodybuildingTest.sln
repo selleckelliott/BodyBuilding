@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BodybuildingTest", "BodybuildingTest.csproj", "{050E6DE6-AC27-41EF-BD20-15A15D161AD1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BodybuildingTest", "BodybuildingTest.csproj", "{050E6DE6-AC27-41EF-BD20-15A15D161AD1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BodybuildingTest.Tests", "..\BodybuildingTest.Tests\BodybuildingTest.Tests.csproj", "{61135C46-67F5-42F3-B193-6FC505E62038}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{050E6DE6-AC27-41EF-BD20-15A15D161AD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{050E6DE6-AC27-41EF-BD20-15A15D161AD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{050E6DE6-AC27-41EF-BD20-15A15D161AD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61135C46-67F5-42F3-B193-6FC505E62038}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61135C46-67F5-42F3-B193-6FC505E62038}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61135C46-67F5-42F3-B193-6FC505E62038}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61135C46-67F5-42F3-B193-6FC505E62038}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
