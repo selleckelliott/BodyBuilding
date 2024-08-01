@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Body_Building.Exercises
-{
+{//
     public class BackSquat
     {
         public string ExerciseName { get; set; }
