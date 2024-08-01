@@ -8,5 +8,7 @@ namespace BodybuildingTest.Models.UserInformation
         UserInfo GetUserInfo(int id);
         void UpdateUserInfo(UserInfo userInfo);
         public void AddUser(UserInfo newUser);
+        public UserInfo AssignNewUser();
+        public void DeleteUser(UserInfo userInfo);
     }
 }

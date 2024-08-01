@@ -65,6 +65,10 @@ namespace BodybuildingTest.Models.UserInformation
             userInfo.AllWorkouts = exerciseList;
             return userInfo;
         }
-
+        public void DeleteUser(UserInfo userInfo)
+        {
+            _conn.Execute("DELETE FROM userinfo WHERE UserID = @id", new { id = userInfo.UserID});
+            _conn.Execute("DELETE FROM usertracker WHERE UserID = @id", new {id =  userInfo.UserID});
+        }
     }
 }

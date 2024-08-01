@@ -51,6 +51,15 @@ namespace BodybuildingTest.Controllers
                 return RedirectToAction("Index");
             }
         }
-        
+        public IActionResult InsertUser(UserInfo newUser)
+        {
+            var user = repo.AssignNewUser();
+            return View(user);
+        }
+        public IActionResult DeleteUser(UserInfo userInfo)
+        {
+            repo.DeleteUser(userInfo);
+            return RedirectToAction("Index");
+        }
     }
 }
