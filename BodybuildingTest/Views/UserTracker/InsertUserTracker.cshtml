@@ -1,0 +1,42 @@
+﻿@model BodybuildingTest.Models.UserTracking.UserTracker
+
+<h2>Add a New Tracker</h2>
+
+@using (Html.BeginForm("NewUserTracker", "UserTracker", "Post"))
+{
+    <input asp-for="ExerciseID" type="hidden" value="" />
+    <input asp-for="TrackerID" type="hidden" value="" />
+
+    <label asp-for="UserID" class="control-label">UserID</label>
+    <input type="number" name="UserID" class="form-control" value="" />
+
+    <label asp-for="ExerciseName" class="control-label">ExerciseName</label>
+    <input type="text" name="ExerciseName" class="form-control" value="" />
+
+    <label asp-for="Set1Reps" class="control-label">Set1Reps</label>
+    <input type="number" name="Set1Reps" class="form-control" value="" />
+
+    <label asp-for="Set2Reps" class="control-label">Set2Reps</label>
+    <input type="number" name="Set2Reps" class="form-control" value="" />
+
+    <label asp-for="Set3Reps" class="control-label">Set3Reps</label>
+    <input type="number" name="Set3Reps" class="form-control" value="" />
+
+    <label asp-for="Set4Reps" class="control-label">Set4Reps</label>
+    <input type="number" name="Set4Reps" class="form-control" value="" />
+
+    <label asp-for="Set5Reps" class="control-label">Set5Reps</label>
+    <input type="number" name="Set5Reps" class="form-control" value="" />
+
+    <label asp-for="WeightLifted" class="control-label">WeightLifted</label>
+    <input type="number" name="WeightLifted" class="form-control" value="" />
+
+    <label asp-for="Date" class="control-label">Date</label>
+    <input type="date" name="Date" class="form-control" value="" />
+
+    <label asp-for="Notes" class="control-label">Notes</label>
+    <input type="text" name="Notes" class="form-control" value="" />
+
+
+    <input type="submit" value="Add Lift" class="btn btn-primary" />
+}

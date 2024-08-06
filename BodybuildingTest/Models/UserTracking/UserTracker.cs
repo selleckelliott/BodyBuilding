@@ -6,6 +6,7 @@ using MySql.Data.MySqlClient;
 using System.Collections.Generic;
 using System.Data;
 using BodybuildingTest.Models.Exercise;
+using BodybuildingTest.Models.UserInformation;
 
 namespace BodybuildingTest.Models.UserTracking
 {
@@ -34,5 +35,7 @@ namespace BodybuildingTest.Models.UserTracking
         //This will allow UpdateUserTracker.cshtml to update the usertracker table and
         //pull the ExerciseNames from the exercise table as they would be the only options to choose from
         public IEnumerable<Exercises> Exercises { get; set; }
+
+        public IEnumerable<UserInfo> AllUserInfo { get; set; }
     }
 }

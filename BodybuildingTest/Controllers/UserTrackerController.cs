@@ -53,5 +53,23 @@ namespace BodybuildingTest.Controllers
 
             return RedirectToAction("ViewUserTracker", new { id = userTracker.UserID });
         }
+        public IActionResult NewUserTracker(UserTracker userTracker)
+        {
+            try
+            {
+                repo.InsertUserTracker(userTracker);
+                return RedirectToAction("Index");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return RedirectToAction("Index");
+            }
+        }
+        public IActionResult InsertUserTracker()
+        {
+            var userTracker = repo.AssignNewUserTracker();
+            return View(userTracker);
+        }
     }
 }
